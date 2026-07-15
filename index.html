@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tap Academy – Premier tech education platform offering Java Full Stack, DSA, Web Development, Python and more. Launch your tech career today." />
+  <meta name="keywords" content="Tap Academy, Java Full Stack, DSA, Web Development, Python, Tech Courses, Placement" />
+  <title>Tap Academy – Learn Today, Build Tomorrow</title>
+  <link rel="icon" href="assets/images/logo.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="show-signin">
+
+  <!-- ═══════════════════ SIGN IN SCREEN ═══════════════════ -->
+  <div id="signin-screen" class="signin-screen">
+    <div class="signin-box">
+      <img src="assets/images/logo.png" alt="Tap Academy Logo" class="signin-logo" />
+      <h2>Welcome to Tap Academy</h2>
+      <form id="signin-form" onsubmit="handleSignIn(event)">
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" required />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" required />
+        </div>
+        <button type="submit" class="btn btn-primary w-full">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ HEADER / NAV ═══════════════════ -->
+  <header id="header" class="header">
+    <nav class="navbar container">
+      <div class="nav-brand">
+        <img src="assets/images/logo.png" alt="Tap Academy Logo" class="nav-logo" id="nav-logo" />
+        <span class="brand-text">Tap <span class="accent">Academy</span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="courses.html" class="nav-link" id="nav-courses">Courses</a></li>
+        <li><a href="reviews.html" class="nav-link" id="nav-reviews">Student Reviews</a></li>
+        <li><a href="hire.html" class="nav-link" id="nav-hire">Hire From Us</a></li>
+        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a></li>
+        <li><a href="#" class="nav-link" id="nav-signin-link" onclick="showSignIn()">Sign In</a></li>
+      </ul>
+      <a href="courses.html" class="btn btn-primary nav-cta" id="nav-enroll-btn">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <video src="assets/videos/hero-bg.mp4" autoplay loop muted playsinline class="hero-bg-video"></video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="container hero-content">
+      <div class="hero-badge fade-in">🚀 #1 Tech Academy in South India</div>
+      <h1 class="hero-title fade-in">Transform Your Future with<br /><span class="gradient-text">World-Class Tech Education</span></h1>
+      <p class="hero-subtitle fade-in">Master in-demand skills, build real-world projects, and land your dream job with 100% placement assistance.</p>
+      <div class="hero-stats fade-in">
+        <div class="stat-item">
+          <span class="stat-number" data-target="1000">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Students Placed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="96">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Placement Rate</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="170">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Hiring Partners</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Expert Courses</span>
+        </div>
+      </div>
+      <div class="hero-actions fade-in">
+        <a href="courses.html" class="btn btn-primary btn-large" id="start-learning-btn">
+          <i class="fas fa-rocket"></i> Start Learning
+        </a>
+        <a href="reviews.html" class="btn btn-outline btn-large" id="success-stories-btn">
+          <i class="fas fa-play-circle"></i> Success Stories
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+      <p>Scroll to explore</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ TRUST BADGES ═══════════════════ -->
+  <section class="trust-section">
+    <div class="container">
+      <p class="trust-label">Our graduates work at</p>
+      <div class="trust-logos">
+        <div class="trust-logo-item"><i class="fab fa-google"></i> Google</div>
+        <div class="trust-logo-item"><i class="fab fa-amazon"></i> Amazon</div>
+        <div class="trust-logo-item"><i class="fab fa-microsoft"></i> Microsoft</div>
+        <div class="trust-logo-item"><i class="fab fa-meta"></i> Meta</div>
+        <div class="trust-logo-item"><i class="fas fa-building"></i> Infosys</div>
+        <div class="trust-logo-item"><i class="fas fa-laptop-code"></i> TCS</div>
+        <div class="trust-logo-item"><i class="fas fa-code"></i> Wipro</div>
+        <div class="trust-logo-item"><i class="fab fa-salesforce"></i> Salesforce</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SUCCESS STORIES SECTION ═══════════════════ -->
+  <section class="students-section section-pad" id="students">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Stars</span>
+        <h2 class="section-title">Meet Our <span class="gradient-text">Success Stories</span></h2>
+        <p class="section-subtitle">Real students. Real transformations. Real careers. Click any profile to read their inspiring journey.</p>
+      </div>
+      <!-- Cards injected by students.js -->
+      <div class="success-stories-grid" id="success-stories-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ WHY CHOOSE US ═══════════════════ -->
+  <section class="why-section section-pad" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Tap Academy</span>
+        <h2 class="section-title">What Makes Us <span class="gradient-text">Different</span></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal" id="why-card-placement">
+          <div class="why-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>100% Placement Assistance</h3>
+          <p>Dedicated placement team, mock interviews, resume building, and direct recruiter connections to land your dream job.</p>
+        </div>
+        <div class="why-card reveal" id="why-card-experts">
+          <div class="why-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Industry Expert Mentors</h3>
+          <p>Learn from professionals with 10+ years at top MNCs. Real-world experience, not just textbook knowledge.</p>
+        </div>
+        <div class="why-card reveal" id="why-card-projects">
+          <div class="why-icon"><i class="fas fa-project-diagram"></i></div>
+          <h3>Live Projects & Hackathons</h3>
+          <p>Build 5+ real-world projects, participate in hackathons, and create a portfolio that impresses recruiters.</p>
+        </div>
+        <div class="why-card reveal" id="why-card-flexible">
+          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <h3>Flexible Batch Timings</h3>
+          <p>Weekend, weekday, morning, and evening batches. Learn at your own pace without disrupting your schedule.</p>
+        </div>
+        <div class="why-card reveal" id="why-card-cert">
+          <div class="why-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Industry-Recognized Certificate</h3>
+          <p>Earn certificates recognized by 200+ partner companies. Boost your LinkedIn profile and stand out.</p>
+        </div>
+        <div class="why-card reveal" id="why-card-community">
+          <div class="why-icon"><i class="fas fa-users"></i></div>
+          <h3>Vibrant Community</h3>
+          <p>Join 5000+ alumni network. Lifelong access to study materials, webinars, and peer support groups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ STUDENT PROFILE MODAL ═══════════════════ -->
+  <div class="student-modal-overlay" id="student-modal-overlay" onclick="closeStudentModal()">
+    <div class="student-modal-content-new" id="student-modal-content" onclick="event.stopPropagation()">
+      <!-- Populated by students.js -->
+    </div>
+  </div>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer" id="main-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="assets/images/logo.jpg" alt="Tap Academy" class="nav-logo" />
+            <span class="brand-text">Tap <span class="accent">Academy</span></span>
+          </div>
+          <p class="footer-desc">Empowering the next generation of tech professionals with cutting-edge curriculum, expert mentors, and guaranteed placement support.</p>
+          <div class="footer-social" id="footer-social">
+            <a href="#" class="social-icon" id="social-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" id="social-insta" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" id="social-linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" id="social-youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon" id="social-twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="course-detail.html?id=java">Java Full Stack</a></li>
+            <li><a href="course-detail.html?id=dsa">DSA</a></li>
+            <li><a href="course-detail.html?id=web">Web Development</a></li>
+            <li><a href="course-detail.html?id=frontend">Front-End Dev</a></li>
+            <li><a href="course-detail.html?id=backend">Back-End Dev</a></li>
+            <li><a href="course-detail.html?id=python">Python Programming</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Student Reviews</a></li>
+            <li><a href="hire.html">Hire From Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 123, Tech Park, Anna Salai, Chennai – 600 002</p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> info@tapacademy.in</p>
+          <p><i class="fas fa-clock"></i> Mon–Sat: 9AM – 7PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 Tap Academy. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color:#ff6b6b;"></i> in Chennai</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/students.js"></script>
+</body>
+</html>

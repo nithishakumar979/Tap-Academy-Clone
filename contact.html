@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Tap Academy – Chennai's premier tech education academy. Get in touch for admissions, courses, and placement queries." />
+  <title>Tap Academy – Learn Today, Build Tomorrow</title>
+  <link rel="icon" href="assets/images/logo.jpg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header" class="header">
+    <nav class="navbar container">
+      <div class="nav-brand">
+        <img src="assets/images/logo.png" alt="Tap Academy Logo" class="nav-logo" />
+        <span class="brand-text">Tap <span class="accent">Academy</span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="reviews.html" class="nav-link">Student Reviews</a></li>
+        <li><a href="hire.html" class="nav-link">Hire From Us</a></li>
+        <li><a href="contact.html" class="nav-link active" id="nav-contact">Contact Us</a></li>
+        <li><a href="index.html" class="nav-link" id="nav-signin-link">Sign In</a></li>
+      </ul>
+      <a href="courses.html" class="btn btn-primary nav-cta" id="nav-enroll-btn">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <span class="section-tag">Get In Touch</span>
+      <h1 class="page-hero-title">Contact <span class="gradient-text">Tap Academy</span></h1>
+      <p>We'd love to hear from you. Reach out for admissions, course info, or any queries.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section section-pad">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info-col">
+          <h2 class="contact-heading">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="contact-subtext">Our team is always ready to guide you through the enrollment process, answer your queries, and help you pick the right course.</p>
+
+          <div class="contact-info-items">
+            <div class="ci-item" id="ci-address">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="ci-text">
+                <h4>Visit Us</h4>
+                <p> 4, Outer Ring Road, near McDonald's,<br> BTM 2nd Stage, Kuvempu Nagar, </br>BTM Layout, Bengaluru, Karnataka 560076</p>
+              </div>
+            </div>
+            <div class="ci-item" id="ci-phone">
+              <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="ci-text">
+                <h4>Call Us</h4>
+                <p><a href="tel:080 6987 8321">+080 6987 8321</a>
+              </div>
+            </div>
+            <div class="ci-item" id="ci-email">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ci-text">
+                <h4>Email Us</h4>
+                <p><a href="mailto:info@tapacademy.in">info@tapacademy.in</a><br /><a href="mailto:admissions@tapacademy.in">admissions@tapacademy.in</a></p>
+              </div>
+            </div>
+            <div class="ci-item" id="ci-hours">
+              <div class="ci-icon"><i class="fas fa-clock"></i></div>
+              <div class="ci-text">
+                <h4>Office Hours</h4>
+                <p>Monday – Saturday: 9:00 AM – 7:00 PM<br />Sunday: 09:00 AM – 2:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <h4>Follow Us</h4>
+            <div class="contact-social-icons">
+              
+              <a target="_blank" href="https://www.instagram.com/tapacademy.online?igsh=aDNuejE1NGI2YTE2" class="social-icon" id="contact-social-insta"><i class="fab fa-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/company/thetapacademy/" class="social-icon" id="contact-social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+              <a target="_blank" href="https://youtube.com/@tapacademy?si=g8aL1x-EAcQ5032Z" class="social-icon" id="contact-social-youtube"><i class="fab fa-youtube"></i></a>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-col">
+          <div class="contact-form-wrap">
+            <h3>Send Us a Message</h3>
+            <form class="contact-form" id="contact-form" onsubmit="submitContactForm(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" placeholder="John Doe" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address *</label>
+                  <input type="email" id="contact-email" placeholder="john@example.com" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number *</label>
+                  <input type="tel" id="contact-phone" placeholder="+91 98765 43210" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Subject</label>
+                  <select id="contact-subject">
+                    <option value="">Select a subject</option>
+                    <option>Course Enquiry</option>
+                    <option>Admissions</option>
+                    <option>Placement Query</option>
+                    <option>Hiring Partnership</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-course">Interested Course</label>
+                <select id="contact-course">
+                  <option value="">Select a course</option>
+                  <option>Java Full Stack Development</option>
+                  <option>Data Structures & Algorithms</option>
+                  <option>Web Development</option>
+                  <option>Front-End Development</option>
+                  <option>Back-End Development</option>
+                  <option>Python Programming</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Your Message *</label>
+                <textarea id="contact-message" placeholder="Tell us how we can help you..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-full" id="submit-contact-btn">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+              <div class="form-success-msg" id="form-success-msg" style="display:none;">
+                <i class="fas fa-check-circle"></i> Thank you! We'll get back to you within 24 hours.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE MAP & LOCATION INFO -->
+  <section class="map-section">
+    <div class="container">
+      <div class="location-card-wrap reveal">
+        <div class="location-card">
+          <h3 class="location-title">📍 TAP ACADEMY BTM</h3>
+          <div class="location-details">
+            <p><i class="fas fa-map-marker-alt"></i> <span>4, Outer Ring Road, near McDonald's, BTM 2nd Stage, Kuvempu Nagar, BTM Layout, Bengaluru, Karnataka 560076</span></p>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:08069878321">080 6987 8321</a></p>
+            <p><i class="fas fa-globe"></i> <a href="https://thetapacademy.com" target="_blank" rel="noopener">https://thetapacademy.com</a></p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=TAP+Academy+BTM,+Bengaluru" target="_blank" rel="noopener" class="btn btn-primary btn-directions">
+              Get Directions <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-wrap reveal" id="map-wrap">
+      <iframe
+        id="google-map"
+        title="TAP Academy BTM Location"
+        src="https://maps.google.com/maps?q=TAP+Academy,+BTM+Layout,+Bengaluru&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+      </div>
+      <div class="faq-grid" id="faq-grid">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" onclick="toggleFaq(1)">
+            What is the duration of the courses? <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-1">
+            Our courses range from 3 to 6 months depending on the program. Java Full Stack and Web Development are 6-month programs, while DSA, Front-End, and Back-End courses are 3-month programs.
+          </div>
+        </div>
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" onclick="toggleFaq(2)">
+            Do you provide placement assistance? <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-2">
+            Yes! We provide 100% placement assistance. Our dedicated placement team helps with resume building, mock interviews, soft skills training, and connects you directly with 200+ hiring partners.
+          </div>
+        </div>
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" onclick="toggleFaq(3)">
+            Are there EMI options available? <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-3">
+            Yes, we offer flexible EMI options with 0% interest for up to 6 months. We also have scholarship programs for deserving students.
+          </div>
+        </div>
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" onclick="toggleFaq(4)">
+            Can I attend a free demo class? <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-4">
+            Absolutely! We offer a free demo class for all courses. Contact us to schedule your free session and experience our teaching methodology first-hand.
+          </div>
+        </div>
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question" onclick="toggleFaq(5)">
+            What are the batch timings? <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-5">
+            We offer morning (9AM–12PM), afternoon (1PM–4PM), and evening (6PM–9PM) batches on weekdays, plus dedicated weekend batches for working professionals.
+          </div>
+        </div>
+        <div class="faq-item" id="faq-6">
+          <button class="faq-question" onclick="toggleFaq(6)">
+            Is the course available online? <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-6">
+            We offer both classroom and online modes. Online students get the same live sessions, access to recordings, and placement support.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="assets/images/logo.png" alt="Tap Academy" class="nav-logo" />
+            <span class="brand-text">Tap <span class="accent">Academy</span></span>
+          </div>
+          <p class="footer-desc">Empowering the next generation of tech professionals.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="hire.html">Hire From Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 4, Outer Ring Rd, near McDonald's, BTM 2nd Stage, Kuvempu Nagar, Stage 2, BTM Layout, Bengaluru, Karnataka 560076</p>
+          <p><i class="fas fa-phone"></i> 080 6987 8321 </p>
+          <p><i class="fas fa-envelope"></i> https://thetapacademy.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 Tap Academy. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color:#ff6b6b;"></i> in Bengaluru</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    function toggleFaq(id) {
+      const answer = document.getElementById('faq-answer-' + id);
+      const item = document.getElementById('faq-' + id);
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+    function submitContactForm(e) {
+      e.preventDefault();
+      document.getElementById('form-success-msg').style.display = 'flex';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

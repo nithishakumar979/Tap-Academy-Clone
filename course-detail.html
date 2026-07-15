@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detailed course information for Tap Academy. View syllabus, fees, projects, placement assistance, and enroll now." />
+  <title>Tap Academy – Learn Today, Build Tomorrow</title>
+  <link rel="icon" href="assets/images/logo.jpg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header" class="header">
+    <nav class="navbar container">
+      <div class="nav-brand">
+        <img src="assets/images/logo.jpg" alt="Tap Academy Logo" class="nav-logo" />
+        <span class="brand-text">Tap <span class="accent">Academy</span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="reviews.html" class="nav-link">Student Reviews</a></li>
+        <li><a href="hire.html" class="nav-link">Hire From Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li><a href="index.html" class="nav-link" id="nav-signin-link">Sign In</a></li>
+      </ul>
+      <a href="#enroll-section" class="btn btn-primary nav-cta" id="nav-enroll-btn">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- COURSE DETAIL HERO -->
+  <section class="course-detail-hero" id="course-detail-hero">
+    <div class="container">
+      <a href="courses.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Courses</a>
+      <div class="course-detail-header">
+        <div class="course-detail-info">
+          <div class="course-level-badge" id="cd-level-badge"></div>
+          <h1 id="cd-title" class="course-detail-title"></h1>
+          <p id="cd-overview" class="course-detail-overview"></p>
+          <div class="course-quick-stats">
+            <div class="quick-stat">
+              <i class="fas fa-clock"></i>
+              <div>
+                <span id="cd-duration" class="qs-value"></span>
+                <span class="qs-label">Duration</span>
+              </div>
+            </div>
+            <div class="quick-stat">
+              <i class="fas fa-signal"></i>
+              <div>
+                <span id="cd-level" class="qs-value"></span>
+                <span class="qs-label">Level</span>
+              </div>
+            </div>
+            <div class="quick-stat">
+              <i class="fas fa-project-diagram"></i>
+              <div>
+                <span id="cd-projects" class="qs-value"></span>
+                <span class="qs-label">Projects</span>
+              </div>
+            </div>
+            <div class="quick-stat">
+              <i class="fas fa-certificate"></i>
+              <div>
+                <span class="qs-value">Yes</span>
+                <span class="qs-label">Certificate</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-price-hero">
+            <span id="cd-fee-original" class="price-original"></span>
+            <span id="cd-fee" class="price-hero"></span>
+          </div>
+          <div class="course-detail-actions">
+            <a href="#enroll-section" class="btn btn-primary btn-large" id="enroll-now-hero">Enroll Now <i class="fas fa-rocket"></i></a>
+            <a href="contact.html" class="btn btn-outline btn-large" id="get-counselling-btn">Free Counselling</a>
+          </div>
+        </div>
+        <div class="course-detail-img-wrap" id="cd-img-wrap">
+          <!-- filled by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE CONTENT TABS -->
+  <section class="course-tabs-section section-pad">
+    <div class="container">
+      <div class="tabs-nav" id="tabs-nav">
+        <button class="tab-btn active" data-tab="syllabus" id="tab-syllabus">Syllabus</button>
+        <button class="tab-btn" data-tab="outcomes" id="tab-outcomes">Learning Outcomes</button>
+        <button class="tab-btn" data-tab="instructor" id="tab-instructor">Instructor</button>
+        <button class="tab-btn" data-tab="placement" id="tab-placement">Placement</button>
+      </div>
+
+      <!-- Syllabus Tab -->
+      <div class="tab-content active" id="tab-syllabus-content">
+        <div class="syllabus-grid" id="cd-syllabus"></div>
+      </div>
+
+      <!-- Outcomes Tab -->
+      <div class="tab-content" id="tab-outcomes-content">
+        <div class="outcomes-grid" id="cd-outcomes"></div>
+      </div>
+
+      <!-- Instructor Tab -->
+      <div class="tab-content" id="tab-instructor-content">
+        <div class="instructor-card" id="cd-instructor">
+          <!-- filled by JS -->
+        </div>
+      </div>
+
+      <!-- Placement Tab -->
+      <div class="tab-content" id="tab-placement-content">
+        <div class="placement-section-inner">
+          <div class="placement-stats-grid">
+            <div class="placement-stat-card">
+              <div class="ps-number">98%</div>
+              <div class="ps-label">Placement Rate</div>
+            </div>
+            <div class="placement-stat-card">
+              <div class="ps-number">₹6 LPA</div>
+              <div class="ps-label">Avg. Package</div>
+            </div>
+            <div class="placement-stat-card">
+              <div class="ps-number">200+</div>
+              <div class="ps-label">Hiring Partners</div>
+            </div>
+            <div class="placement-stat-card">
+              <div class="ps-number">30 Days</div>
+              <div class="ps-label">Avg. Time to Place</div>
+            </div>
+          </div>
+          <div class="placement-features">
+            <div class="pf-item"><i class="fas fa-check-circle"></i> Resume Building & LinkedIn Optimization</div>
+            <div class="pf-item"><i class="fas fa-check-circle"></i> Mock Technical Interviews (5+ rounds)</div>
+            <div class="pf-item"><i class="fas fa-check-circle"></i> HR Interview Preparation</div>
+            <div class="pf-item"><i class="fas fa-check-circle"></i> Direct Referrals to 200+ Company Partners</div>
+            <div class="pf-item"><i class="fas fa-check-circle"></i> Aptitude & Soft Skills Training</div>
+            <div class="pf-item"><i class="fas fa-check-circle"></i> Job Portal Access for 1 Year</div>
+          </div>
+          <div class="hiring-logos">
+            <div class="hiring-logo-item"><i class="fab fa-google"></i> Google</div>
+            <div class="hiring-logo-item"><i class="fab fa-amazon"></i> Amazon</div>
+            <div class="hiring-logo-item"><i class="fab fa-microsoft"></i> Microsoft</div>
+            <div class="hiring-logo-item"><i class="fas fa-building"></i> Infosys</div>
+            <div class="hiring-logo-item"><i class="fas fa-laptop-code"></i> TCS</div>
+            <div class="hiring-logo-item"><i class="fas fa-code"></i> Wipro</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENROLL SECTION -->
+  <section class="enroll-section section-pad" id="enroll-section">
+    <div class="container">
+      <div class="enroll-inner">
+        <div class="enroll-info">
+          <h2>Enroll in <span id="enroll-course-name" class="gradient-text"></span></h2>
+          <p>Take the first step toward your dream tech career. Limited seats available per batch!</p>
+          <div class="enroll-includes">
+            <div class="ei-item"><i class="fas fa-check"></i> Lifetime course access</div>
+            <div class="ei-item"><i class="fas fa-check"></i> Industry-recognized certificate</div>
+            <div class="ei-item"><i class="fas fa-check"></i> 100% placement assistance</div>
+            <div class="ei-item"><i class="fas fa-check"></i> EMI options available</div>
+            <div class="ei-item"><i class="fas fa-check"></i> Free demo class</div>
+          </div>
+        </div>
+        <div class="enroll-form-wrap">
+          <form class="enroll-form" id="enroll-form" onsubmit="submitEnroll(event)">
+            <h3>Reserve Your Seat</h3>
+            <div class="form-group">
+              <input type="text" id="enroll-name" placeholder="Your Full Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="enroll-email" placeholder="Email Address" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" id="enroll-phone" placeholder="Phone Number" required />
+            </div>
+            <div class="form-group">
+              <select id="enroll-batch">
+                <option value="">Preferred Batch Timing</option>
+                <option value="morning">Morning (9 AM – 12 PM)</option>
+                <option value="afternoon">Afternoon (1 PM – 4 PM)</option>
+                <option value="evening">Evening (6 PM – 9 PM)</option>
+                <option value="weekend">Weekend Batch</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-full" id="submit-enroll-btn">Enroll Now <i class="fas fa-rocket"></i></button>
+            <p class="form-note"><i class="fas fa-shield-alt"></i> Your information is 100% secure</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="assets/images/logo.jpg" alt="Tap Academy" class="nav-logo" />
+            <span class="brand-text">Tap <span class="accent">Academy</span></span>
+          </div>
+          <p class="footer-desc">Empowering the next generation of tech professionals.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="course-detail.html?id=java">Java Full Stack</a></li>
+            <li><a href="course-detail.html?id=dsa">DSA</a></li>
+            <li><a href="course-detail.html?id=web">Web Development</a></li>
+            <li><a href="course-detail.html?id=python">Python Programming</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> info@tapacademy.in</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 Tap Academy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/courses.js"></script>
+</body>
+</html>

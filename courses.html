@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Tap Academy's premium courses – Java Full Stack, DSA, Web Development, Front-End, Back-End, and Python Programming." />
+  <title>Tap Academy – Learn Today, Build Tomorrow</title>
+  <link rel="icon" href="assets/images/logo.jpg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header" class="header">
+    <nav class="navbar container">
+      <div class="nav-brand">
+        <img src="assets/images/logo.jpg" alt="Tap Academy Logo" class="nav-logo" id="nav-logo" />
+        <span class="brand-text">Tap <span class="accent">Academy</span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+        <li><a href="courses.html" class="nav-link active" id="nav-courses">Courses</a></li>
+        <li><a href="reviews.html" class="nav-link" id="nav-reviews">Student Reviews</a></li>
+        <li><a href="hire.html" class="nav-link" id="nav-hire">Hire From Us</a></li>
+        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a></li>
+        <li><a href="index.html" class="nav-link" id="nav-signin-link">Sign In</a></li>
+      </ul>
+      <a href="courses.html" class="btn btn-primary nav-cta" id="nav-enroll-btn">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <span class="section-tag">Our Programs</span>
+      <h1 class="page-hero-title">World-Class <span class="gradient-text">Courses</span></h1>
+      <p>Industry-aligned curriculum designed by top engineers to transform beginners into professionals.</p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <section class="filter-bar-section">
+    <div class="container">
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All Courses</button>
+        <button class="filter-btn" data-filter="beginner" id="filter-beginner">Beginner</button>
+        <button class="filter-btn" data-filter="intermediate" id="filter-intermediate">Intermediate</button>
+        <button class="filter-btn" data-filter="advanced" id="filter-advanced">Advanced</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES GRID -->
+  <section class="courses-section section-pad">
+    <div class="container">
+      <div class="courses-grid" id="courses-grid">
+
+        <!-- Java Full Stack -->
+        <div class="course-card reveal" data-level="advanced" id="course-java">
+          <div class="course-img-wrap">
+            <img src="assets/images/java_course.jpg" alt="Java Full Stack" class="course-img" />
+            <div class="course-level advanced">Advanced</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 6 Months</span>
+              <span><i class="fas fa-users"></i> 1200+ Students</span>
+            </div>
+            <h3 class="course-title">Java Full Stack Development</h3>
+            <p class="course-desc">Master Java, Spring Boot, React JS, MySQL, and cloud deployment. Build enterprise-grade applications from scratch.</p>
+            <div class="course-skills">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-original">₹60,000</span>
+                <span class="price-current">₹45,000</span>
+              </div>
+              <a href="course-detail.html?id=java" class="btn btn-primary" id="learn-more-java">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- DSA -->
+        <div class="course-card reveal" data-level="intermediate" id="course-dsa">
+          <div class="course-img-wrap">
+            <img src="assets/images/dsa_course.jpg" alt="DSA Course" class="course-img" />
+            <div class="course-level intermediate">Intermediate</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3 Months</span>
+              <span><i class="fas fa-users"></i> 900+ Students</span>
+            </div>
+            <h3 class="course-title">Data Structures & Algorithms</h3>
+            <p class="course-desc">Crack FAANG interviews with mastery in arrays, trees, graphs, dynamic programming, and system design.</p>
+            <div class="course-skills">
+              <span class="skill-tag">Arrays</span>
+              <span class="skill-tag">Trees</span>
+              <span class="skill-tag">Graphs</span>
+              <span class="skill-tag">DP</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-original">₹25,000</span>
+                <span class="price-current">₹18,000</span>
+              </div>
+              <a href="course-detail.html?id=dsa" class="btn btn-primary" id="learn-more-dsa">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="course-card reveal" data-level="beginner" id="course-web">
+          <div class="course-img-wrap">
+            <img src="assets/images/web_course.jpg" alt="Web Development" class="course-img" />
+            <div class="course-level beginner">Beginner</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 4 Months</span>
+              <span><i class="fas fa-users"></i> 1500+ Students</span>
+            </div>
+            <h3 class="course-title">Web Development</h3>
+            <p class="course-desc">From zero to full-stack hero. HTML5, CSS3, JavaScript, Node.js, and MongoDB for modern web applications.</p>
+            <div class="course-skills">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-original">₹35,000</span>
+                <span class="price-current">₹25,000</span>
+              </div>
+              <a href="course-detail.html?id=web" class="btn btn-primary" id="learn-more-web">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Front-End -->
+        <div class="course-card reveal" data-level="intermediate" id="course-frontend">
+          <div class="course-img-wrap">
+            <div class="course-img-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <i class="fas fa-paint-brush"></i>
+              <span>Front-End Development</span>
+            </div>
+            <div class="course-level intermediate">Intermediate</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3 Months</span>
+              <span><i class="fas fa-users"></i> 800+ Students</span>
+            </div>
+            <h3 class="course-title">Front-End Development</h3>
+            <p class="course-desc">Master React, Vue.js, TypeScript, UI/UX design principles, and build pixel-perfect, responsive interfaces.</p>
+            <div class="course-skills">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">SASS</span>
+              <span class="skill-tag">Redux</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-original">₹30,000</span>
+                <span class="price-current">₹22,000</span>
+              </div>
+              <a href="course-detail.html?id=frontend" class="btn btn-primary" id="learn-more-frontend">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back-End -->
+        <div class="course-card reveal" data-level="intermediate" id="course-backend">
+          <div class="course-img-wrap">
+            <div class="course-img-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <i class="fas fa-server"></i>
+              <span>Back-End Development</span>
+            </div>
+            <div class="course-level intermediate">Intermediate</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3 Months</span>
+              <span><i class="fas fa-users"></i> 700+ Students</span>
+            </div>
+            <h3 class="course-title">Back-End Development</h3>
+            <p class="course-desc">Build robust APIs, databases, authentication systems, and scalable server-side architecture with Node.js and Python.</p>
+            <div class="course-skills">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-original">₹30,000</span>
+                <span class="price-current">₹22,000</span>
+              </div>
+              <a href="course-detail.html?id=backend" class="btn btn-primary" id="learn-more-backend">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="course-card reveal" data-level="beginner" id="course-python">
+          <div class="course-img-wrap">
+            <div class="course-img-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+              <i class="fab fa-python"></i>
+              <span>Python Programming</span>
+            </div>
+            <div class="course-level beginner">Beginner</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 4 Months</span>
+              <span><i class="fas fa-users"></i> 1100+ Students</span>
+            </div>
+            <h3 class="course-title">Python Programming</h3>
+            <p class="course-desc">From basics to advanced Python, Data Science, Machine Learning, and AI. Build intelligent applications.</p>
+            <div class="course-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">ML</span>
+              <span class="skill-tag">TensorFlow</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-original">₹35,000</span>
+                <span class="price-current">₹25,000</span>
+              </div>
+              <a href="course-detail.html?id=python" class="btn btn-primary" id="learn-more-python">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner section-pad">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Ready to Transform Your Career?</h2>
+        <p>Get a free counselling session from our experts and find the perfect course for you.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-large" id="free-counselling-btn">Get Free Counselling</a>
+        <a href="tel:+919876543210" class="btn btn-outline btn-large" id="call-now-btn"><i class="fas fa-phone"></i> Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="main-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="assets/images/logo.jpg" alt="Tap Academy" class="nav-logo" />
+            <span class="brand-text">Tap <span class="accent">Academy</span></span>
+          </div>
+          <p class="footer-desc">Empowering the next generation of tech professionals with cutting-edge curriculum, expert mentors, and guaranteed placement support.</p>
+          <div class="footer-social" id="footer-social">
+            <a href="#" class="social-icon" id="social-fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" id="social-insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" id="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" id="social-youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="course-detail.html?id=java">Java Full Stack</a></li>
+            <li><a href="course-detail.html?id=dsa">DSA</a></li>
+            <li><a href="course-detail.html?id=web">Web Development</a></li>
+            <li><a href="course-detail.html?id=frontend">Front-End Dev</a></li>
+            <li><a href="course-detail.html?id=backend">Back-End Dev</a></li>
+            <li><a href="course-detail.html?id=python">Python Programming</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Student Reviews</a></li>
+            <li><a href="hire.html">Hire From Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 123, Tech Park, Anna Salai, Chennai</p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> info@tapacademy.in</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 Tap Academy. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color:#ff6b6b;"></i> in Chennai</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Filter courses
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.course-card').forEach(card => {
+          if (filter === 'all' || card.dataset.level === filter) {
+            card.style.display = '';
+            card.style.opacity = '1';
+          } else {
+            card.style.opacity = '0';
+            setTimeout(() => card.style.display = 'none', 300);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
